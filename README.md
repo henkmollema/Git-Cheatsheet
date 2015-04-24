@@ -17,7 +17,7 @@ git branch -d <branch> -> git branch -d feature-branch
 ```
 Use `-D` to force delete (including local changes).
 
-### Remove remote branch
+#### Remove remote branch
 ```
 git push origin --delete <branch> -> git push origin --delete feature-branch
 ```
@@ -43,7 +43,7 @@ Commit with commit message:
 git commit -m "Commit message here"
 ```
 
-Change last commit message:
+#### Change last commit message:
 ```
 git commit --amend
 ```

@@ -32,6 +32,11 @@ git push origin --delete <branch> -> git push origin --delete feature-branch
 git add .
 ```
 
+#### Unstage/reset a file
+```
+git reset <filename> -> git reset src/Folder/File.cs
+```
+
 #### Undo all local changes
 ```
 git checkout .
@@ -58,6 +63,7 @@ Use ` -m "New commit message"` to specify the new message directly.
 ```
 git reset HEAD~1
 ```
+This also works for remote commits.
 
 #### Rebase with remote:
 ```

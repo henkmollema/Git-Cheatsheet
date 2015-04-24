@@ -11,6 +11,11 @@ git checkout <branch> -> git checkout dev
 git checkout -b <branch> -> git checkout -b feature-branch
 ```
 
+#### Push local branch to remote
+```
+git push -u origin <branch> -> git push -u origin feature-branch
+```
+
 #### Remove local branch
 ```
 git branch -d <branch> -> git branch -d feature-branch

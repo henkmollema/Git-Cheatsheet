@@ -1,5 +1,5 @@
 # Git Cheatsheet
-_Conventient Git cheatsheet_
+_A conventient Git cheatsheet_
 
 #### Switch branch
 ```
@@ -65,13 +65,6 @@ git reset HEAD~1
 ```
 This also works for remote commits.
 
-#### Rebase with remote:
-```
-git fetch <remote> -> git fetch upstream
-git rebase <remote>/<branch> -> git rebase upstream/master
-git push -f
-```
-
 #### Reset pushed commits
 Undo pushed commits (eg. to undo a merge/rebase). Reset the commits back to the commit specified hash:
 ```
@@ -87,19 +80,24 @@ git push -f
 git remote add <name> <git> -> git remote add upstream https://github.com/organization/repo.git
 ```
 
-#### Rebase with remote branch
+#### Rebase with remote:
+Fetch commits from remote branch:
+```
+git fetch <remote> -> git fetch upstream
+```
+
+Rebase with the remote branch:
 ```
 git rebase <remote>/<branch> -> git rebase upstream/master
 ```
+
 Force-push the changes:
 ```
 git push -f
 ```
 
 #### Squash commits
-If you want to squash (merge) all the commits into one, follow this step too; otherwise, go to the next step.
-
-First find the commit that is the base of your branch:
+Find the commit that is the base of your branch:
 
 ```
 git merge-base fix-45 master

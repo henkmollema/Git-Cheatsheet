@@ -27,6 +27,11 @@ Use `-D` to force delete (including local changes).
 git push origin --delete <branch> -> git push origin --delete feature-branch
 ```
 
+#### Update remote branches list
+```
+git remote update origin --prune
+```
+
 #### Stage all local changes
 ```
 git add .

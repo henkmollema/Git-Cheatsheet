@@ -1,5 +1,4 @@
-# Git Cheatsheet
-_A conventient Git cheatsheet_
+# Git cheatsheet
 
 #### Switch branch
 ```
